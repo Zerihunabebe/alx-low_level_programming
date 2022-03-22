@@ -1,44 +1,33 @@
 #include <stdio.h>
-/* more headers gose there */
-/* betty style doc for function main gose there */
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints all possible combinations of two two-digits numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i = 48, j = 48, k = 48, l = 49;
+	int i, j;
 
-	while (j < 58)
+	for (i = 0; i < 100; i++)
 	{
-
-		while (k < 58)
+		for (j = 0; j < 100; j++)
 		{
-			putchar(i);
-			putchar(j);
-			putchar(' ');
-			putchar(k);
-			putchar(l);
-			if (!(i == 57 && j == 56 && k == 57 && l == 57))
+			if (i < j)
 			{
-				putchar(',');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			l++;
 		}
-		l = 48;
-		k++;
 	}
-	j++;
-	l = j + 1;
-	k = i;
+	putchar('\n');
+	return (0);
 }
-j = 48;
-i++;
-k = i;
-l = j + 1;
-}
-putchar('\n');
-return (0);
-}
+
