@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * puts2 - prints character of a string
@@ -8,7 +7,7 @@
  * Return: void which means it is correct
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 	int a;
 
