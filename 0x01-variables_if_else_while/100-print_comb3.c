@@ -11,7 +11,7 @@ int main(void)
 	int number_right;
 
 
-	for (number_left = 48; number_right <= 78; number_left++)
+	for (number_left = 56; number_right <= 78; number_left++)
 	{
 		for (number_right = number_left + 1 ; number_right <= 78; number_right++)
 		{
@@ -26,7 +26,7 @@ int main(void)
 			}
 
 			putchar(',');
-			putchar (' ');
+			putchar(' ');
 
 		}
 
