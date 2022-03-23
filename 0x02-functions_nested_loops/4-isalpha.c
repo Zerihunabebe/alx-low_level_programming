@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isalpha - checks whether the passed character is an alphabet (A-Z ora-z
+ * _isalpha - checks whether the passed character is an alphabet (A-Z or a-z)
  * @c: The character to check
  *
  */
