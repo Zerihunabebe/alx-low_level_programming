@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncat - concatentes n bytes from a string to another
  * @dest: destination string
@@ -8,6 +7,7 @@
  *
  * Return: a pointer to the resultting string dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i] != '\0')
 		i++;
 
-	whil (src[j] != && j < n)
+	while (src[j] != && j < n)
 	{
 		dest[i] = src[j];
 		i++;
