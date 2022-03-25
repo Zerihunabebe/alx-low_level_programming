@@ -20,7 +20,9 @@ char *leet(char *s)
 			if (*(s + count) == lower_case[i] || *(s + count) == upper_case[i])
 			{*(s + count) = numbers[i];
 				break;
-			}}cout++;
+			}
+		}
+			count++;
 	}
 
 	return (s);
