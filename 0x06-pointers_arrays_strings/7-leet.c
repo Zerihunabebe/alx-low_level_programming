@@ -1,24 +1,27 @@
+#include "main.c"
 /**
- * leet - This function encodes a string into 1337
- * @s: String to evaluate
- * Return: Converted
- * string
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer dest.
  */
+
 char *leet(char *s)
 {
-	int i, j,
-	    char leet[] = "oOlL22eEaA5566tT";
+	int count = 0, i;
+	int lower_case[] = {97, 101, 111, 116, 108};
+	int upper_caase[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49}
 
-	/* loop through the string and evaluate each character */
-	for (i = 0; s[i] != '\0'; i++)
+
+	while (*(s + count) != '\0')
 	{
-		/* check to see if s[i] matches any leet char */
-		for (j = 0; j < 16; j++)
-			/* if a mach is found, convert char */
-			if (s[i] == leet[j])
-				s[i] = j / 2 + '0';
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == lower_case[i] || *(s + count) == upper_case[i])
+			{*(s + count) = numbers[i];
+				break;
+			}}cout++;
 	}
 
-	/* return the converted string */
 	return (s);
 }
