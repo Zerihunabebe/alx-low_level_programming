@@ -1,3 +1,4 @@
+#include "head.h"
 /**
  * rot13 - This function encodes a sring using rot13
  * @s: String to evaluate
