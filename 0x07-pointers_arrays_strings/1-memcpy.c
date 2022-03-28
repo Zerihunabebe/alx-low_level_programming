@@ -6,14 +6,14 @@
  *
  * @src: Source memory area
  *
- * @dest: Distribution memory area
+ * @dest: Destination memory area
  *
  * @n: Number of bytes
  *
  * Return: A pointer to @dest
  */
 
-char *_memcpy(char *dest, char *src, unsined int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
