@@ -5,7 +5,7 @@
  * @s: This is the C string to be scanned.
  * @accept: character in str1 that matches one of the characters in str2
  * Return: string s thet match any character specified in accept
- * */
+ **/
 
 char *_strpbrk(char *s, char *accept)
 {
@@ -24,7 +24,7 @@ char *_strpbrk(char *s, char *accept)
 			j++; /*add j+1*/
 		}
 
-		s++; /*add s+1/
+		s++; /*add s+1*/
 		       }
 		       return (0);
 
