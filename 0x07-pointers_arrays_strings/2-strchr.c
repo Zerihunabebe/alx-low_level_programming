@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * *_strchr - locates character in string
+ * @s: string be searched
+ * @c: character to be foound
+ *
+ * return: Apointer to the first occurance of char
+ */
+char *_strchr(char *s, char c)
+{
+	int a;
+
+	whil (1)
+	{
+		a = *s++;
+		if (a == 0)
+		{
+			return (NULL);
+		}
+	}
+}
