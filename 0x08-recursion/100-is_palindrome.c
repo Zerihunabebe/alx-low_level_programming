@@ -50,7 +50,7 @@ int last_index(char *s)
  * Return: 0 or 1
  */
 
-int is_palindrom(char *s)
+int is_palindrome(char *s)
 {
 	int end = last_index(s);
 
