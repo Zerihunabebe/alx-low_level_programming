@@ -13,7 +13,7 @@ void print_string(char *str);
  * Return: 0, success
  */
 
-int main(int argc _attribute_((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	print_string(argv[0]);
 	putchar('\n');
