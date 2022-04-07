@@ -1,5 +1,5 @@
 #include "main.h"
-include <stdio.h>
+#include <stdio.h>
 
 /**
  * _strspn - Get the length of a prifix substring
@@ -25,6 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 
 	}
 
-	return (i)
+	return (i);
 
 }

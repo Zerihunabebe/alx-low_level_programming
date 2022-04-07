@@ -8,7 +8,7 @@
  * Return: Converted integer OR 0 if none
  */
 
-int -atoi(char *s)
+int _atoi(char *s)
 {
 	int sign_cache = 1;
 	int result = 0;
@@ -25,5 +25,5 @@ int -atoi(char *s)
 		s++;
 	}
 
-	return (reult);
+	return (result);
 }
