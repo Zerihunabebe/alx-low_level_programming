@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (x = 0; x < ac ; x++)
 	{
-		for (Y = 0; av[x][y] != '\0'; y++)
+		for (y = 0; av[x][y] != '\0'; y++)
 		{
 			s[a] = av[x][y];
 			a++;
