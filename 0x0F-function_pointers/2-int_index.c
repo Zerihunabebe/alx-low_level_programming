@@ -1,9 +1,9 @@
-#include "functon_pointers.h"
+#include "function_pointers.h"
 
 /**
  * int_index - earches for an integer
  * @array: array to search in
- * @size: sizeo of the array
+ * @size: size of the array
  * @cmp: pointer to the comparing function
  *
  * Return: index of the first element for which
