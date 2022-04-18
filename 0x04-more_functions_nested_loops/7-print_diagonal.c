@@ -5,7 +5,7 @@
  * on the terminal
  * @n: The number of times the character \ should be printed
  */
-vid print_diagonal(int n)
+void print_diagonal(int n)
 {
 	/* slash and space variable */
 	int sl, sp;
