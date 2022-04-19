@@ -5,7 +5,7 @@
  * But for multiples of 3, prints 'Fizz' instead of the number,
  * for multiple of 5, prints 'Buzz', and for multiple of both,
  * prints 'FizzBuzz'
- * Retiurn: Always 0 (success)
+ * Retiurn: Always 0 (Success)
  */
 int main(void)
 {
