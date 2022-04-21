@@ -1,6 +1,6 @@
-selction .data
-         msg: db "Hello, Holberton", 0x0a
-         msglen equ $-msg
+section .data
+        msg: db "Hello, Holberton", 0x0a
+        msglen equ $-msg
 
 section .text
 	global main
