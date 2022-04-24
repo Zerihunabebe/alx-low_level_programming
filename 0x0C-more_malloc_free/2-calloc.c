@@ -4,7 +4,7 @@
  * _calloc - allocates memory for an array, using malloc, and initializees to 0
  * @nmemb: number of elements of the array
  * @size: size of each element of the array
- * Returne: pointer to the allocated memory (SUCCESS) or
+ * Return: pointer to the allocated memory (SUCCESS) or
  * NULL if @nmemb or @size is 0 (FAILURE) or
  * NULL if insufficient memory was available (FAILURE)
  */
