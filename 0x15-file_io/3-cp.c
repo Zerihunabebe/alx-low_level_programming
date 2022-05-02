@@ -28,23 +28,23 @@ int main(int argc, char **argv)
 		if (write(f2, buf, n) != n || f2 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit (99);
+			exit(99);
 		}
 	}
 	if (n == -1)
 	{
 		dprintf(STDERR_FILE, "Error: Can't read from file %s\n", argv[1]);
-		exit (98);
+		exit(98);
 	}
 	if (close(f1) < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f1);
-		exit (100);
+		exit(100);
 	}
 	if (close(f2) < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Cann't close fd %d\n", f2);
-		exit (100);
+		exit(100);
 	}
 	return (0);
 }
