@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*8
+/**
  * main - copies the content of a file to another file
  * @argc: number of arguments passed
  * @argv: double pointer
