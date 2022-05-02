@@ -3,11 +3,11 @@
 /**
  * main - copies the content of a file to another file
  * @argc: number of arguments passed to the program
- * @argv: array of argument
+ * @argv: array of arguments
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, r, a, b;
 	char buf[BUFSIZ];
@@ -17,7 +17,7 @@ int main(int argc, char **argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fd_r = open(argv[1], O_REONLY);
+	fd_r = open(argv[1], O_RDONLY);
 	if (fd_r < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -43,7 +43,7 @@ int main(int argc, char **argv[])
 	if (a < 0 || b < 0)
 	{
 		if (a < 0)
-			dprintf(STDERR_FILENO, "error: Can't close fd %d\n", fd_r);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
 		if (b < 0)
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
 		exit(100);
