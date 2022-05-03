@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 				header = malloc(sizeof(Elf64_Ehdr));
 				if (!header)
 				dprintf(STDERR_FILENO, "Malloc error\n"), exit(98);
-				fd = open(argv[1],O_RDONLY);
+				fd = open(argv[1], O_RDONLY);
 				if (fd < 0)
 				{
 				dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	validate_elf(header->e_ident);
 	print_magic(header->e_ident);
 	print_class(header->e_ident);
-	print_data(header-e_ident);
+	print_data(header->e_ident);
 	print_version(header->e_ident);
 	print_osabi(header->e_ident);
 	printf(" ABI Version:                        ");
