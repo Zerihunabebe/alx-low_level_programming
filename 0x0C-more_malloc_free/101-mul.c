@@ -1,4 +1,4 @@
-#nclude "main.h"
+#include "main.h"
 
 int find_len(char *str);
 char *create_xarray(int size);
@@ -12,7 +12,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len);
  *
  * Return: The length of the string.
  */
-it find_len(char *str)
+int find_len(char *str)
 {
 	int len = 0;
 
@@ -69,7 +69,7 @@ char *iterate_zeroes(char *str)
  * @c: The character to be converted.
  *
  * Description: If c is a non-digit, the function
- *              exists with a status of 98.
+ *              exits with a status of 98.
  * Return: The converted int.
  */
 int get_digit(char c)
@@ -136,11 +136,11 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 /**
  * add_nums - Adds the numbers stored in two strings.
- * @final_prod: The buffer storng the running final product.
+ * @final_prod: The buffer storing the running final product.
  * @next_prod: The next product to be added.
  * @next_len: The length of next_prod.
  */
-void add_nums(char *final_prod, char *next_prod, it next_len)
+void add_nums(char *final_prod, char *next_prod, int next_len)
 {
 	int num, tens = 0;
 
@@ -210,7 +210,7 @@ int main(int argc, char *argv[])
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-	for (index = final_len(argv[2]) - 1; index >= 0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);
