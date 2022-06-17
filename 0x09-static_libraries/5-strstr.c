@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strstr Locating a substring
+ * _strstr - Locating a substring
  *
  * @needle: Occurance to find
  *
