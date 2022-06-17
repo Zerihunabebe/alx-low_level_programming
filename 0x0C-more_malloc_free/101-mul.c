@@ -140,14 +140,14 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  * @next_prod: The next product to be added.
  * @next_len: The length of next_prod.
  */
-void add_nums(char *final_prod,, char *next_prod, it next_len)
+void add_nums(char *final_prod, char *next_prod, it next_len)
 {
 	int num, tens = 0;
 
 	while (*(final_prod + 1))
 		final_prod++;
 
-	while (*(next_prod +1))
+	while (*(next_prod + 1))
 		next_prod++;
 
 	for (; *final_prod != 'x'; final_prod--)
@@ -198,7 +198,7 @@ int main(int argc, char *argv[])
 
 	if (*(argv[1]) == '0')
 		argv[1] = iterate_zeroes(argv[1]);
-	if (*(argv[2]) =='0')
+	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
@@ -207,7 +207,7 @@ int main(int argc, char *argv[])
 	}
 
 	size = find_len(argv[1]) + find_len(argv[2]);
-	final_prod = create_xarray(size +1);
+	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
 	for (index = final_len(argv[2]) - 1; index >= 0; index--)
