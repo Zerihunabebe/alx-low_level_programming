@@ -1,9 +1,9 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC:.c=.0)
-Name = school
+OBJ = $(SRC:.c=.o)
+NAME = school
 
 all: $(OBJ)
-	@echo "Compilling..."
+	@echo "Compiling..."
 	@$(CC) $(OBJ) -o $(NAME)
 	@echo "Done."
