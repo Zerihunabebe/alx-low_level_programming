@@ -33,7 +33,7 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * help_bionary - searches for a value in an array of
+ * help_binary - searches for a value in an array of
  * integers using recursion
  * @array: array to search the value in
  * @value: value to look for
