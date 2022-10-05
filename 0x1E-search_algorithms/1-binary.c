@@ -18,7 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	if (!array || size == 0)
 		return (-1);
 
-	return (help_binary(array, value, 0, size - 1))
+	return (help_binary(array, value, 0, size - 1));
 }
 
 /**
